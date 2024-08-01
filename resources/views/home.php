@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>SISTEMA</h1>
+    <p><?php echo $title . " " . $description?></p>
 </body>
 </html>
