@@ -32,7 +32,7 @@ Este Framework está en desarrollo y no está totalmente completo. Aunque se han
 * `routes/`: Carpeta que contiene las rutas de la aplicación
 * `resources/`: Carpeta que contiene las vistas, archivos css y js a ser compilados
 * `lib`/: Carpeta que contiene clases y funciones de utilidad que se utilizan en todo el framework. En particular, contiene la clase Route que se encarga de manejar las rutas de la aplicación.
-* `autoloader`: es un script PHP que se encarga de cargar automáticamente las clases y archivos necesarios para la aplicación. Esto se logra mediante la función spl_autoload_register, que registra una función de autoload personalizada.
+* `autoloader`: Contiene un script PHP que se encarga de cargar automáticamente las clases y archivos necesarios para la aplicación. Esto se logra mediante la función spl_autoload_register, que registra una función de autoload personalizada.
 
 ## Uso
 
