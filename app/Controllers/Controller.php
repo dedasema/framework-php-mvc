@@ -18,4 +18,8 @@ class Controller{
             return "404 - Not Found";
         }
     }
+
+    public function redirect($route){
+        header("Location: $route");
+    }   
 }
