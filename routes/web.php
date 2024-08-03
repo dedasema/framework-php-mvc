@@ -3,19 +3,22 @@
 use Lib\Route;
 
 use App\Controllers\HomeController;
+use App\Controllers\ContactController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/contact', function(){
-    return;
-});
+Route::get('/contacts', [ContactController::class, 'index']);
 
-Route::get('/about', function(){
-    return;
-});
+Route::get('/contacts/create', [ContactController::class, 'create']);
 
-Route::get('/courses/:slug', function($slug){
-    return;
-});
+Route::post('/contacts', [ContactController::class, 'store']);
 
-Route::dispatch();
+Route::get('/contacts/:id', [ContactController::class, 'show']);
+
+Route::get('/contacts/:id/edit', [ContactController::class, 'edit']);
+
+Route::post('contacts/:id', [ContactController::class, 'update']);
+
+Route::post('contacts/:id/delete', [ContactController::class, 'destroy']);
+
+Lib\Route::dispatch();
